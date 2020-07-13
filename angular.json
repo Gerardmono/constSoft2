@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "constSoft"
+    }
+  },
+  "defaultProject": "constSoft",
+  "cli": {
+    "analytics": "c30c5219-aae1-4353-8dfe-7f2ab93fc7d5"
+  }
 }

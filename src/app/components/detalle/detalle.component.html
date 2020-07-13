@@ -1,0 +1,17 @@
+<h1 class="d-flex justify-content-center">{{desarrollo.nombre}}</h1>
+<h4 class="d-flex justify-content-center">{{desarrollo.estado}}</h4>
+
+<div class="row">
+  <div class="col-md-8">
+    <img [src]="desarrollo.image" [alt]="desarrollo.nombre" class="img-fluid">
+  </div>
+  <div class="col-md-4">
+    <agm-map  [latitude]="lat" [longitude]="lng" [zoom]="8">
+      <agm-marker [latitude]="desarrollo.latitud" [longitude]="desarrollo.longitud">
+      </agm-marker>
+    </agm-map>
+  </div>
+</div>
+<br>
+<p>{{desarrollo.descripcion}}</p>
+
