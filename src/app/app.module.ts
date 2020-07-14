@@ -20,6 +20,7 @@ import { DesarrolloService } from './services/desarrollo.service';
 import { ListaDesarrollosComponent } from './components/lista-desarrollos/lista-desarrollos.component';
 import { PrincipalComponent } from './components/principal/principal.component';
 import { DetalleComponent } from './components/detalle/detalle.component';
+import { NoimagePipe } from './pipes/noimage.pipe';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { DetalleComponent } from './components/detalle/detalle.component';
     RegistroComponent,
     ListaDesarrollosComponent,
     PrincipalComponent,
-    DetalleComponent
+    DetalleComponent,
+    NoimagePipe
   ],
   imports: [
     BrowserModule,

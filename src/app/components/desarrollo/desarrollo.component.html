@@ -73,7 +73,7 @@
     </div>
     <div class="col-md-4 align-middle">
         <div *ngIf="desarrollo.image!=''" class="h-100">
-            <img [src]="desarrollo.image" alt="" class="img-thumbnail img-wi">
+            <img [src]="desarrollo.image | noimage" alt="" class="img-thumbnail img-wi">
         </div>
     </div>
 </div>

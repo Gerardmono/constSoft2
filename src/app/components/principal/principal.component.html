@@ -14,7 +14,7 @@
 
 <div class="card-columns animates fadeIn slow" *ngIf="!cargando && desarrollos.length > 0">
   <div class="card" *ngFor="let desarrollo of desarrollos; let i = index">
-    <img class="card-img-top" [src]="desarrollo.image" [alt]="desarrollo.nombre">
+    <img class="card-img-top" [src]="desarrollo.image | noimage" [alt]="desarrollo.nombre">
     <div class="card-body">
       <h5 class="card-title">{{desarrollo.nombre}}</h5>
       <button class="btn btn-primary" [routerLink]="['/detalle', desarrollo.id]" >
