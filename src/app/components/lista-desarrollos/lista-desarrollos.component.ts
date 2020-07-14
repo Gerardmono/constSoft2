@@ -41,7 +41,7 @@ export class ListaDesarrollosComponent implements OnInit {
     }).then( resp =>{
       if ( resp.value === true) {
         this.desarrollos.splice( i, 1 );
-        this.desarrolloService.borrarHeroe( desarrollo.id ).subscribe();
+        this.desarrolloService.borrarDesarrollo( desarrollo.id ).subscribe();
       }
     });
   }

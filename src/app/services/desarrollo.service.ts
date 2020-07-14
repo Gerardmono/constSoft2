@@ -59,7 +59,7 @@ export class DesarrolloService {
     return this.http.get(`${this.url}/desarrollos/${id}.json`);
   }
 
-  borrarHeroe( id: string ) {
+  borrarDesarrollo( id: string ) {
     return this.http.delete(`${this.url}/desarrollos/${id}.json`);
   }
 

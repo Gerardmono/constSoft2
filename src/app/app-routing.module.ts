@@ -15,9 +15,9 @@ const routes: Routes = [
     {path: 'registro', component: RegistroComponent},
     {path: 'modelo', component: ModeloComponent},
     {path: 'desarrollo/:id', component: DesarrolloComponent, canActivate: [ AuthGuard ] },
-    {path: 'detalle/:id', component: DetalleComponent},
     {path: 'desarrollos', component: ListaDesarrollosComponent, canActivate: [ AuthGuard ] },
     {path: 'principal', component: PrincipalComponent},
+    {path: 'detalle/:id', component: DetalleComponent},
     {path: '**', pathMatch: 'full', redirectTo: 'principal' }
 ];
 
